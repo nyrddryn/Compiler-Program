@@ -1,0 +1,13 @@
+PROGRAM  EXERCISE2;  (* Exercise 2 *)
+
+VAR  M:INTEGER;  
+     N:INTEGER; 
+     S: INTEGER;
+
+BEGIN
+    N := READI;
+    M := READI;
+    S := M + N;
+    CALL WRITEI(S);
+END.  (* Exercise 2 *)
+

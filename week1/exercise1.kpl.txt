@@ -1,0 +1,31 @@
+PROGRAM  EXERCISE2;  (* Exercise 1 *)
+TYPE T = INTEGER;
+VAR  I:INTEGER;  
+     N:INTEGER; 
+     J:INTEGER;
+     A: ARRAY(. 100 .) OF ARRAY(. 100 .) OF T; 
+
+PROCEDURE INPUT(N: INTEGER);
+BEGIN
+    FOR I := 1 TO N DO
+        FOR J := 1 TO N DO
+            A(.I.)(.j.) := READI;
+END;
+
+PROCEDURE OUTPUT;
+VAR K: INTEGER;
+    H: INTEGER;
+BEGIN
+  K := 1;
+  FOR I := 1 TO N DO
+    FOR J := 1 TO I DO 
+        IF A(.I.)(.J.) != 0 THEN K := 0;
+  CALL WRITEI(K);
+END;
+
+BEGIN
+    N := READI;
+    CALL INPUT(N);
+    CALL OUTPUT;
+END.  (* Exercise 1 *)
+
