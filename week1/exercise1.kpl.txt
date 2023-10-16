@@ -1,4 +1,4 @@
-PROGRAM  EXERCISE2;  (* Exercise 1 *)
+PROGRAM  EXERCISE1;  (* Exercise 1 *)
 TYPE T = INTEGER;
 VAR  I:INTEGER;  
      N:INTEGER; 
